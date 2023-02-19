@@ -261,6 +261,21 @@ class QueueJUnitTest {
 		assertEquals("< null >", Q5.toString());
 	}
 
-
+	/*
+	Test case Dqueue Dequeue 3
+	* Tester: Aydin & Kleard
+	* Date: Feb 18th 2023
+	* Test type: ECC test
+	* Test case description:  Queue is not empty - Element in queue is not null - Previous element is null
+	* Expected output: < 15 >
+	* Bug report:
+	* */
+	@Test
+	public void testDqueueDequeue3() {
+		Q5.enqueue(null);
+		Q5.enqueue(15);
+		Q5.dequeue();
+		assertEquals("< 15 >", Q5.toString());
+	}
 }
 
