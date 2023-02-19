@@ -21,8 +21,14 @@ class QueueJUnitTest {
 	@BeforeEach
 	void setUp() throws Exception {
 		
-		Q1 = new DQueue<Integer>();
-		Q2 = new DQueue<Integer>();
+		Q1 = new AQueue<Integer>();
+		Q2 = new AQueue<Integer>();
+		Q3 = new LQueue<Integer>();
+		Q4 = new LQueue<Integer>();
+		Q5 = new DQueue<Integer>();
+		Q6 = new DQueue<Integer>();
+	
+
 		
 		
 	}
