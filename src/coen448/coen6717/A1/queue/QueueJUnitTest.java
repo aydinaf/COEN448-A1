@@ -27,7 +27,7 @@ class QueueJUnitTest {
 		Q4 = new LQueue<Integer>();
 		Q5 = new DQueue<Integer>();
 		Q6 = new DQueue<Integer>();
-	}
+	
 
 		
 		
