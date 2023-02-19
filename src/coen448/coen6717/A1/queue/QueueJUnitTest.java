@@ -176,5 +176,91 @@ class QueueJUnitTest {
 		assertEquals("< 48 >", Q3.toString());
 
 	}
+
+
+	/*
+	Test case Lqueue Dequeue 2
+	* Tester: Aydin & Kleard
+	* Date: Feb 18th 2023
+	* Test type: Additional BCC test
+	* Test case description:  Queue is not full - Queue is empty - Element in queue is not null
+	* Expected output: Exception Thrown
+	* Bug report: Throws assertion error
+	* */
+	@Test
+	public void testLqueueDequeue2() {
+		Q3.dequeue();
+		assertEquals("< >", Q3.toString());
+	}
+
+
+	/*
+	Test case Dqueue Enqueue 1
+	* Tester: Aydin & Kleard
+	* Date: Feb 18th 2023
+	* Test type: Base test
+	* Test case description:  Input not null - Queue not full - Queue not empty - Elements in queue is 1
+	* Expected output:  < 47 >
+	* Bug report:
+	* */
+	@Test
+	public void testDqueueEnqueue1() {
+		Q5.enqueue(47);
+		assertEquals("< 47 >", Q5.toString());
+	}
+
+
+	/*
+	Test case Dqueue Enqueue 2
+	* Tester: Aydin & Kleard
+	* Date: Feb 18th 2023
+	* Test type: Additional BCC test
+	* Test case description:  Input null - Queue not full - Queue not empty - Elements in queue is 1
+	* Expected output: < null >
+	* Bug report:
+	* */
+	@Test
+	public void testDqueueEnqueue2() {
+		Q5.enqueue(null);
+		assertEquals("< null >", Q5.toString());
+	}
+
+
+	/*
+	Test case Dqueue Dequeue 1
+	* Tester: Aydin & Kleard
+	* Date: Feb 18th 2023
+	* Test type: Additional BCC test
+	* Test case description:  Queue is not full - Queue is not empty - Element in queue is not null - Previous Element is not null
+	* Expected output: < 25 >
+	* Bug report:
+	* */
+	@Test
+	public void testDqueueDequeue1() {
+		Q5.enqueue(10);
+		Q5.enqueue(25);
+		Q5.dequeue();
+		assertEquals("< 25 >", Q5.toString());
+	}
+
+
+	/*
+	Test case Dqueue Dequeue 2
+	* Tester: Aydin & Kleard
+	* Date: Feb 18th 2023
+	* Test type: Additional BCC test
+	* Test case description:  Queue is not full - Queue is not empty - Element in queue is null - Previous Element is not null
+	* Expected output: < null >
+	* Bug report:
+	* */
+	@Test
+	public void testDqueueDequeue2() {
+		Q5.enqueue(10);
+		Q5.enqueue(null);
+		Q5.dequeue();
+		assertEquals("< null >", Q5.toString());
+	}
+
+
 }
 
